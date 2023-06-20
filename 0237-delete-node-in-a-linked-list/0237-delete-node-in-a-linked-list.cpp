@@ -11,15 +11,14 @@ public:
     void deleteNode(ListNode* node) {
         ListNode* curr=node;
         ListNode* forw=curr->next;
-        while(forw!=NULL){
-            swap(curr->val,forw->val);
-            if(forw->next==NULL)
-            curr->next=NULL;
-            //increment pointer
-            curr=forw;
-            forw=forw->next;
         
-        }
+            swap(curr->val,forw->val);
+           
+            //increment pointer
+            curr->next=forw->next;
+           
+        
+        
         
         
     }
