@@ -6,16 +6,12 @@ public:
         int i=0;
        long ans=x;
        
-        if(ans>=0)
+        if(ans<0)
+        ans=-ans;
         while(i<j){
             swap(num[i++],num[j--]);
         }
-        else {
-        ans=-ans;
-         while(i<j){
-            swap(num[i++],num[j--]);
-        }
-        }
+  
         ans=stol(num);
         if(ans<INT_MIN || ans>INT_MAX)
         return 0;
