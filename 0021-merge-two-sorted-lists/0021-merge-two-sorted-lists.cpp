@@ -14,12 +14,11 @@ public:
      ListNode* h1  =list1;
       ListNode* h2  =list2;
       ListNode* head  =NULL;
-      if(h1==NULL && h2!=NULL)
+      if(h1==NULL)
       return h2;
-      if(h2==NULL && h1!=NULL)
+      if(h2==NULL )
       return h1;
-        if(h2==NULL && h1==NULL)
-      return NULL;
+     
      
        ListNode* prev=NULL;
         if(h1->val<=h2->val){
