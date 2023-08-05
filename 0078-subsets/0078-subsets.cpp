@@ -8,7 +8,7 @@ public:
         return ans;
         
     }
-     void solve(vector<int >nums, vector<vector<int>> &ans,int ind,vector<int> &res){
+     void solve(vector<int >&nums, vector<vector<int>> &ans,int ind,vector<int> &res){
        
          int N=nums.size();
          if(ind>=N){
@@ -17,8 +17,8 @@ public:
          }
          res.push_back(nums[ind]);
          solve(nums,ans,ind+1,res);
-        res.pop_back();
-        solve(nums,ans,ind+1,res);
+         res.pop_back();
+         solve(nums,ans,ind+1,res);
          
         
 
